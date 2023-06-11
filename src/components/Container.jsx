@@ -1,8 +1,8 @@
 const styles = {
-  margin: "0 auto",
+  margin: "0 auto 30px",
   width: 1170,
   background: "gray",
-  height: "100vh",
+  height: "30vh",
   color: "white",
 };
 
