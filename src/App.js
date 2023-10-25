@@ -1,6 +1,6 @@
 import { Container } from "./components/Container"
 
-function App() {
+export default function App() {
 	return (
 		<>
 			<Container>
@@ -8,8 +8,7 @@ function App() {
 				<p>lorem ipsum</p>
 			</Container>
 			<Container children={<h3>Modo Alternativo</h3>} />
+			<Container />
 		</>
 	)
 }
-
-export default App
