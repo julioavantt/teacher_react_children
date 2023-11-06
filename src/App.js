@@ -1,6 +1,8 @@
 import { Container } from "./components/Container"
 
 export default function App() {
+	const show = true
+
 	return (
 		<>
 			<Container>
@@ -8,7 +10,7 @@ export default function App() {
 				<p>lorem ipsum</p>
 			</Container>
 			<Container children={<h3>Modo Alternativo</h3>} />
-			<Container />
+			{show && <Container />}
 		</>
 	)
 }
