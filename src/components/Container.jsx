@@ -2,9 +2,8 @@ import { useState } from "react"
 
 const styles = {
 	margin: "20px auto",
-	width: "1178px",
 	background: "salmon",
-	height: "6vh",
+	height: "20dvh",
 	color: "white",
 	padding: "1rem",
 }
@@ -18,10 +17,10 @@ export const Container = props => {
 	//! Si damos clic al botón add corroboraremos que cada invocación crea un componente totalmente diferente.
 
 	return (
-		<>
+		<div style={styles}>
 			<span>{count}</span>
 			<button onClick={() => setCount(prev => prev + 1)}>Add</button>
-			<div style={styles}>{props.children}</div>
-		</>
+			<mark>{props.children}</mark>
+		</div>
 	)
 }
